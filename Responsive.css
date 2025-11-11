@@ -68,24 +68,48 @@
 
     /* FAQ */
 
-
-
     /* TESTimoials */
     #Testimonials h1 {
         font-size: 30px;
     }
 
     .body {
-        height: 180vh;
+        height: 190vh;
+    }
+    .contact-us{
+        height: 78vh;
+    }
+
+    .left-side-contact-us {
+        padding: 10px;
+    }
+
+    .left-side-contact-us .contain-counter-section {
+        padding-top: 15px;
+    }
+    .left-side-contact-us .contain-counter-section h1{
+        font-size: 30px;
     }
 
     .left-side-contact-us .contain-counter-section h2 {
-        font-size: 18px;
+        font-size: 22px;
+         margin-bottom: 10px;
+    }
+    .left-side-contact-us .contain-counter-section p{
+        font-size: 19px ;
+        letter-spacing: 1px;
+        text-align: justify;
     }
 
     .left-side-contact-us .box p {
         text-align: center;
     }
+
+    form {
+        padding: 10px 10px;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -714,6 +738,7 @@
     .body {
         height: 140vh;
     }
+
     .body .cards {
         width: 170px;
         height: 270px;
@@ -771,7 +796,7 @@
     form {
         width: 100%;
     }
-    
+
 
     footer {
         padding: 20px;
