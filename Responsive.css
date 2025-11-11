@@ -1,0 +1,802 @@
+@media (min-width: 1025px) and (max-width: 1440px) {}
+
+@media (max-width: 1024px) {
+    .left-side .contain-div {
+        right: -30px;
+    }
+
+    .Hero_br {
+        display: block;
+    }
+
+    .left-side h1 {
+        font-size: 100px;
+    }
+
+    .left-side h2 {
+        font-size: 30px;
+    }
+
+    .left-side p {
+        margin-top: 30px;
+    }
+
+    .bottom-text-container {
+        width: 300px;
+        font-size: 28px;
+    }
+
+    /* ABOUR SECTION */
+    #About,
+    #service,
+    #Portfolio,
+    #Testimonials {
+        width: 100%;
+        height: auto;
+        padding: 80px 40px 40px 120px;
+        background-color: #fcfcfc;
+    }
+
+    #About h1 {
+        font-size: 30px;
+    }
+
+    #About .right-imag-div .topdiv .text-div {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+
+    /* PORTFOLIO */
+    #Portfolio h1 {
+        font-size: 30px;
+    }
+
+    /* PORTFOLIO */
+
+    /* FAQ */
+
+    #Faq {
+        padding: 40px 40px 0px 120px;
+    }
+
+    .faq-header h4 {
+        font-size: 16px;
+        font-family: "Antonio", sans-serif;
+    }
+
+    /* FAQ */
+
+
+
+    /* TESTimoials */
+    #Testimonials h1 {
+        font-size: 30px;
+    }
+
+    .body {
+        height: 180vh;
+    }
+
+    .left-side-contact-us .contain-counter-section h2 {
+        font-size: 18px;
+    }
+
+    .left-side-contact-us .box p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #Side-Nav-bar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    #Side-Nav-bar img {
+        rotate: 0deg;
+    }
+
+    #Side-Nav-bar .ul {
+        display: none;
+    }
+
+    .side-menu-bar {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.767);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+        display: flex;
+        justify-content: center;
+        /* justify-content: flex-start; */
+        /* aligns menu-list to the left */
+    }
+
+
+    .side-menu-bar.open {
+        opacity: 1;
+        pointer-events: auto;
+        overflow: hidden;
+    }
+
+    .menu-list {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* left align text */
+        justify-content: center;
+        /* vertically center items */
+        transform: translateY(-100%);
+        transition: transform 0.5s ease;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        /* remove bullets if it's a <ul> */
+    }
+
+    .side-menu-bar.open .menu-list {
+        transform: translateY(0);
+    }
+
+    .menu-item {
+        width: 100%;
+        color: #545454;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #cfcfcf;
+        font-size: 24px;
+        font-family: "Archivo", "Archivo Placeholder", sans-serif;
+        font-weight: 400;
+        padding: 20px 30px;
+        /* equal padding left & right */
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    /* Hero Section */
+
+    .overlay {
+        border-bottom: 0px solid;
+    }
+
+    .Hero_br {
+        display: none;
+    }
+
+    .overlay {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 0px 40px;
+
+    }
+
+    .left-side .contain-div {
+        top: -20px;
+        right: 0;
+        width: 100%;
+    }
+
+    .left-side h2 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .left-side h1 {
+        font-size: 100px;
+    }
+
+
+    .left-side p {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .left-side .contain-div .btn {
+        margin-top: 0px;
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .bottom-text-container {
+        font-size: 20px;
+        width: max-content;
+        text-align: center;
+    }
+
+    .left-bottom-conner {
+        bottom: -40px;
+        right: 0;
+        rotate: 180deg;
+    }
+
+    /* ABout */
+
+    #About,
+    #service,
+    #Portfolio,
+    #Testimonials {
+        width: 100%;
+        height: auto;
+        padding: 40px 40px 40px 40px;
+        background-color: #fcfcfc;
+    }
+
+    #About h1 {
+        font-size: 28px;
+    }
+
+    .about-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-container .left-image {
+        width: 100%;
+        height: 80vh;
+    }
+
+    #About .right-imag-div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #About .right-imag-div .topdiv {
+        width: 50%;
+    }
+
+    #About .right-imag-div .bottom-div {
+        width: 50%;
+        border-radius: 40px;
+
+    }
+
+    .faq-br {
+        display: none;
+    }
+
+    #Faq {
+        flex-direction: column;
+        /* stack vertically */
+        padding: 40px 30px;
+        /* adjust spacing */
+        align-items: center;
+        gap: 30px;
+        /* space between left and right boxes */
+    }
+
+    .faq-left-box {
+        width: 100%;
+        top: auto;
+        align-self: center;
+        /* text-align: center; */
+        /* optional: center text */
+    }
+
+    .faq-left-box h1 {
+        font-size: 30px;
+        color: ;
+        margin-bottom: 20px;
+    }
+
+    .faq-left-box p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .faq-right-box {
+        width: 100%;
+    }
+
+    .faq-card {
+        margin-bottom: 20px;
+    }
+
+    .faq-img-div {
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+
+    .faq-img-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+    }
+
+    .faq-header h4 {
+        font-size: 20px;
+    }
+
+
+
+    /*  */
+
+
+    #Testimonials {
+        width: 100%;
+        height: auto;
+        padding: 40px;
+        background-color: #fcfcfc;
+    }
+
+    #Testimonials h1 {
+        font-size: 30px;
+        margin-left: 0px;
+    }
+
+    #Testimonials p {
+        margin-left: 0px;
+    }
+
+    /*  */
+
+    .contact-us {
+        width: 100%;
+        height: 80vh;
+        padding: 8px 20px;
+        padding-left: 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #fcfcfc;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .left-side-contact-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-side-contact-us .contain-counter-section {
+        width: 100%;
+    }
+
+    .left-side-contact-us .contain-counter-section h1 {
+        font-size: 32px;
+    }
+
+    .left-side-contact-us .contain-counter-section p {
+        font-size: 17px;
+    }
+
+    .left-side-contact-us .contain-counter-section h2 {
+        font-size: 25px;
+    }
+
+    .left-side-contact-us .counter-box {
+        display: grid;
+        justify-content: end;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #Side-Nav-bar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    #Side-Nav-bar img {
+        rotate: 0deg;
+    }
+
+    #Side-Nav-bar .ul {
+        display: none;
+    }
+
+    .side-menu-bar {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.767);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease;
+        display: flex;
+        justify-content: center;
+        /* justify-content: flex-start; */
+        /* aligns menu-list to the left */
+    }
+
+
+    .side-menu-bar.open {
+        opacity: 1;
+        pointer-events: auto;
+        overflow: hidden;
+    }
+
+    .menu-list {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        /* left align text */
+        /* justify-content: center; */
+        /* vertically center items */
+        transform: translateY(-100%);
+        transition: transform 0.5s ease;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        /* remove bullets if it's a <ul> */
+    }
+
+    .side-menu-bar.open .menu-list {
+        transform: translateY(0);
+    }
+
+    .menu-item {
+        width: 100%;
+        color: #545454;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        border-bottom: 1px solid #cfcfcf;
+        font-size: 24px;
+        font-family: "Archivo", "Archivo Placeholder", sans-serif;
+        font-weight: 400;
+        padding: 20px 30px;
+        /* equal padding left & right */
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    /* Hero Section */
+
+    .overlay {
+        /* border-right: 30px solid #fcfcfc; */
+    }
+
+    .Hero_br {
+        display: none;
+    }
+
+    .overlay {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left-side {
+        width: 100%;
+        padding: 0px 20px;
+
+    }
+
+    .left-side .contain-div {
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .left-side h2 {
+        font-size: 25px;
+        margin-top: 22px;
+        margin-bottom: 0px;
+    }
+
+    .left-side h1 {
+        font-size: 62px;
+        margin-top: 8px;
+        margin-bottom: 3px;
+    }
+
+
+    .left-side p {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .left-side .contain-div .btn {
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 60px;
+
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .bottom-text-container {
+        font-size: 20px;
+        width: max-content;
+        text-align: center;
+    }
+
+    .left-bottom-conner {
+        bottom: -40px;
+        right: 0;
+        rotate: 180deg;
+    }
+
+    /* ABout */
+
+    #About,
+    #service,
+    #Portfolio,
+    #Testimonials {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px 40px 20px;
+        background-color: #fcfcfc;
+    }
+
+    #About h1 {
+        font-size: 24px;
+        line-height: 1.7rem;
+        text-align: center;
+    }
+
+    .about-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-container .left-image {
+        width: 100%;
+        height: 45vh;
+    }
+
+    #About .right-imag-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #About .right-imag-div .topdiv {
+        width: 100%;
+    }
+
+    #About .right-imag-div .bottom-div {
+        width: 100%;
+        border-radius: 40px;
+
+    }
+
+    /*  */
+    #Portfolio h1 {
+        font-size: 24px;
+        line-height: 1.7rem;
+        text-align: center;
+    }
+
+    #Portfolio p {
+        text-align: center;
+    }
+
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-image-1,
+    .portfolio-image-2 {
+        width: 100%;
+    }
+
+    /*  */
+
+    .faq-br {
+        display: none;
+    }
+
+    #Faq {
+        flex-direction: column;
+        padding: 40px 20px;
+
+        align-items: center;
+        gap: 30px;
+        /* space between left and right boxes */
+    }
+
+    .faq-left-box {
+        width: 100%;
+        top: auto;
+        align-self: center;
+        text-align: center;
+        /* optional: center text */
+    }
+
+    .faq-left-box h1 {
+        font-size: 25px;
+        line-height: 1.7rem;
+        text-align: center;
+    }
+
+
+    .faq-right-box {
+        width: 100%;
+    }
+
+    .faq-card {
+        margin-bottom: 20px;
+    }
+
+    .faq-img-div {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    .faq-img-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 40px;
+    }
+
+    .faq-header h4 {
+        font-size: 17px;
+    }
+
+
+
+    /*  */
+
+
+    #Testimonials {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #fcfcfc;
+    }
+
+    #Testimonials h1 {
+        font-size: 24px;
+        line-height: 1.7rem;
+        text-align: center;
+    }
+
+    #Testimonials p {
+        margin-left: 0px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    /*  */
+
+
+    .body {
+        height: 140vh;
+    }
+    .body .cards {
+        width: 170px;
+        height: 270px;
+    }
+
+    .body .contain {
+        display: none;
+    }
+
+    .contact-us {
+        width: 100%;
+        height: 80vh;
+        padding: 8px 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #fcfcfc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .left-side-contact-us {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .left-side-contact-us .contain-counter-section {
+        width: 100%;
+        display: none;
+    }
+
+    .left-side-contact-us .contain-counter-section h1 {
+        font-size: 32px;
+    }
+
+    .left-side-contact-us .contain-counter-section p {
+        font-size: 17px;
+    }
+
+    .left-side-contact-us .contain-counter-section h2 {
+        font-size: 25px;
+    }
+
+    .left-side-contact-us .counter-box {
+        display: grid;
+        justify-content: end;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form {
+        width: 100%;
+    }
+    
+
+    footer {
+        padding: 20px;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* footer ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        row-gap: 0px;
+        margin: 0px auto;
+    } */
+
+    footer ul li {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding: 10px 0px;
+        letter-spacing: 1px;
+        list-style: none;
+    }
+}
