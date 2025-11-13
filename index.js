@@ -30,25 +30,20 @@ function animate() {
 
         card.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%) rotate(${deg}deg) translateZ(0)`;
     });
-
-
     requestAnimationFrame(animate);
 }
-
 animate();
 
-// 
 
+// 
 const menuDiv = document.querySelector('.menu-div');
 const sideMenuBar = document.querySelector('.side-menu-bar');
-
 menuDiv.addEventListener('click', () => {
     if (sideMenuBar.classList.contains('open')) {
         // Remove 'open' class to start closing animation
         sideMenuBar.classList.remove('open');
         menuDiv.classList.remove('open');
         document.body.style.overflow = '';
-        // After transition duration, disable pointer events if necessary (optional)
         setTimeout(() => {
             // No extra actions needed here since CSS pointer-events is handled by class
         }, 500); // match CSS transition duration
@@ -56,11 +51,24 @@ menuDiv.addEventListener('click', () => {
         // Open menu
         sideMenuBar.classList.add('open');
         menuDiv.classList.add('open');
-            document.body.style.overflow = 'hidden';  // Disable scroll
-      
+        document.body.style.overflow = 'hidden';  // Disable scroll
+
 
     }
 });
+
+// side bar close 
+
+const link = document.querySelectorAll('.menu-item')
+
+link.forEach((e, i) => {
+    console.log(e)
+    e.addEventListener('click', () => {
+        sideMenuBar.classList.remove('open');
+        menuDiv.classList.remove('open');
+        document.body.style.overflow = '';
+    })
+})
 
 
 // Side Bar Hide script
