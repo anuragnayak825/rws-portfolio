@@ -157,9 +157,6 @@ a {
     transform: translateX(0);
 }
 
-
-
-
 .menu-item {
 
     color: #545454;
@@ -168,6 +165,13 @@ a {
     font-size: 24px;
     font-family: "Archivo", "Archivo Placeholder", sans-serif;
     font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.side-menu-bar .menu-list .icon-div{
 
 }
 
@@ -601,12 +605,14 @@ h2 {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.4s ease, opacity 0.4s ease;
+    max-height: 300px;
 }
 
 .portfolio-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+   object-position: top;
 }
 
 .portfolio-card:hover {
@@ -849,7 +855,6 @@ h2 {
     /* Agar background white na ho toh white ki jagah parent background color lagayen */
     z-index: 10;
 }
-
 /* Right edge blur */
 
 
@@ -1080,10 +1085,6 @@ h2 {
     align-items: center;
     padding: 20px;
     gap: 20px;
-    /* display: grid;
-    grid-template-columns: repeat(2, 100px);
-    gap: 30px; */
-
 }
 
 .left-side-contact-us::after {
@@ -1092,14 +1093,11 @@ h2 {
     inset: 0;
     width: 100%;
     height: 100%;
-    /* background-color: #0000006e;
-     */
     background: linear-gradient(to bottom,
             #9c73353d 8%,
             #000000a8 100%);
     border-radius: 10px;
     z-index: 0;
-
 }
 
 .left-side-contact-us .contain-counter-section {
@@ -1109,8 +1107,6 @@ h2 {
     z-index: 20;
     position: relative;
     padding-top: 50px;
-    /* font-family: "Archivo", "Archivo Placeholder", sans-serif; */
-
 }
 
 .left-side-contact-us .contain-counter-section h1 {
@@ -1154,9 +1150,7 @@ h2 {
     height: 100%;
     background-color: #fcfcfc;
     position: relative;
-    /* ✅ zaroori hai */
     z-index: 10;
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1363,37 +1357,8 @@ footer .contact-info a:nth-child(2):hover{
     background-color: #fcfcfc;
 }
 
-
-/* footer ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    position: relative;
-    z-index: 3;
-}
-
-footer ul li {
-
-    font-size: 17px;
-    padding: 10px 0px;
-    letter-spacing: 1px;
-} */
-
-
-
-
-
-
-
-
-
-
 /* FOOTER SECTION */
 
 
+/* =========sticky-buttons=========== */
 
-
-
-
-/* Responsive */

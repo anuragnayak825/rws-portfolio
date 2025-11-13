@@ -6,7 +6,7 @@ const counterSection = document.getElementById("counter-section");
 
 // Function to start the counter for each counter element with different target and speed
 
-const startCounter = (counterElement, target) => {
+const startCounter = (counterElement, target ,speed) => {
 
     if (!counterElement) {
         console.error("Counter element not found!");
@@ -20,7 +20,7 @@ const startCounter = (counterElement, target) => {
         if (counter >= target) {
             clearInterval(interval);
         }
-    }, 50); // Different speed for each counter
+    }, speed); // Different speed for each counter
 };
 
 // Observer to trigger counters when the section is in view
@@ -29,9 +29,9 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
 
             // Start counters for each counter element with different targets and speeds
-            startCounter(counter1, 500); // Target 1500, fast speed
-            startCounter(counter2, 140); // Target 2000, medium speed
-            startCounter(counter3, 98); // Target 2500, slow speed
+            startCounter(counter1, 500 ,0.5); // Target 1500, fast speed
+            startCounter(counter2, 140 ,1); // Target 2000, medium speed
+            startCounter(counter3, 98 ,50); // Target 2500, slow speed
             observer.unobserve(entry.target); // Stop observing after counters start
         }
     });

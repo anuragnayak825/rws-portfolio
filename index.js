@@ -62,7 +62,12 @@ menuDiv.addEventListener('click', () => {
 const link = document.querySelectorAll('.menu-item')
 
 link.forEach((e, i) => {
-    console.log(e)
+    if (i == 0) {
+       e.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    }
+
     e.addEventListener('click', () => {
         sideMenuBar.classList.remove('open');
         menuDiv.classList.remove('open');

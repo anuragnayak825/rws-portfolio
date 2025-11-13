@@ -39,8 +39,11 @@
     </section>
     <div class="side-menu-bar">
         <div class="menu-list">
-            <div onclick="window.location.href='#Hero-section'" class="menu-item-1 menu-item">
+            <div class="menu-item-1 menu-item">
                 <p style="cursor: pointer;"> Home</p>
+                <div class="icon-div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </div>
             <div onclick="window.location.href='#About'" class="menu-item-2 menu-item">
                 <p style="cursor: pointer;"> About</p>
@@ -63,7 +66,7 @@
             Your browser does not support the video tag.
         </video>
 
-        <div class="overlay">
+        <div id="Hero-section-2" class="overlay">
 
             <!-- Left Side -->
             <div class="left-side">
@@ -185,17 +188,18 @@
         <!-- 🔹 Filter Buttons -->
         <div class="portfolio-filter">
             <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="aircon">Aircon Service</button>
-            <button class="filter-btn" data-filter="realestate">Real Estate</button>
-            <button class="filter-btn" data-filter="web">Web Design</button>
-            <button class="filter-btn" data-filter="marketing">Digital Marketing</button>
-            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="Website-Development">Website Development</button>
+            <button class="filter-btn" data-filter="Digital-Marketing">Digital Marketing</button>
+            <button class="filter-btn" data-filter="Graphic-Design">Graphic Design</button>
+            <button class="filter-btn" data-filter="SEO">SEO</button>
+            <button class="filter-btn" data-filter="SMO">SMO</button>
+            <button class="filter-btn" data-filter="Paid-Advertising">Paid Advertising</button>
         </div>
 
         <!-- 🔹 Portfolio Items -->
         <div class="portfolio-wrapper">
             <div class="portfolio-card" data-category="aircon">
-                <img src="/ima/a2nnlfpknwigdgepm1cy.webp" alt="">
+                <img src="/ima/transplantliverindia.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -207,7 +211,7 @@
             </div>
 
             <div class="portfolio-card" data-category="realestate">
-                <img src="/ima/dh6uw5br0mkdvmlnuuy4.webp" alt="">
+                <img src="/ima/asdesignstudio.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -219,7 +223,7 @@
             </div>
 
             <div class="portfolio-card" data-category="web">
-                <img src="/ima/ffipsicpj8457l7nbs6m.webp" alt="">
+                <img src="/ima/airprocoolingsolution.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -231,7 +235,7 @@
             </div>
 
             <div class="portfolio-card" data-category="marketing">
-                <img src="/ima/qrhopowerujiy3mdejg1.webp" alt="">
+                <img src="/ima/bluestreampools.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -243,7 +247,7 @@
             </div>
 
             <div class="portfolio-card" data-category="branding">
-                <img src="/ima/hdemhvs5mfrdqy72dqsx.webp" alt="">
+                <img src="/ima/eldowood.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -255,7 +259,7 @@
             </div>
 
             <div class="portfolio-card" data-category="marketing">
-                <img src="/ima/joa3ipgtt0c5nhoofx3v.webp" alt="">
+                <img src="/ima/supertaskerservice.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -267,7 +271,7 @@
             </div>
 
             <div class="portfolio-card" data-category="realestate">
-                <img src="/ima/mza07abxzuanckjscf5o.webp" alt="">
+                <img src="/ima/tajcalling.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -279,7 +283,7 @@
             </div>
 
             <div class="portfolio-card" data-category="web">
-                <img src="/ima/gdha9pz2rhjyl7n9m4sx.webp" alt="">
+                <img src="/ima/tajprivatetours.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -291,7 +295,18 @@
             </div>
 
             <div class="portfolio-card" data-category="marketing">
-                <img src="/ima/a2nnlfpknwigdgepm1cy.webp" alt="">
+                <img src="/ima/tanresources.webp" alt="">
+                <div class="overlay-port">
+                    <h2>Website Name</h2>
+                    <button class="view-link">
+                        <!-- <a href=""> -->
+                        <i class="fas fa-link"></i> Visit Site
+                        <!-- </a> -->
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <img src="/ima/thehairperfect.webp" alt="">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
                     <button class="view-link">
@@ -708,9 +723,6 @@
 
 
 
-
-
-
     <!-- Testimonials -->
     <!-- GSAP -->
     <script src="counter.js"></script>
@@ -731,24 +743,12 @@
     </script>
 
     <script>
-        // Lottie animation load karte hain
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('lottie-container'), // Yeh wo element hai jahan animation dikhani hai
-            renderer: 'svg', // Renderer type: 'svg', 'canvas', or 'html'
-            loop: true, // Animation loop hoti hai ya nahi
-            autoplay: true, // Animation automatically start ho jati hai
-            path: 'images/animated-icon.json' // Yeh path hai aapke downloaded Lottie JSON file ka
-        });
-    </script>
-
-    <script>
         gsap.registerPlugin(ScrollTrigger);
-
         // Check screen width
         ScrollTrigger.matchMedia({
 
             // Desktop screens (large)
-            "(min-width: 1000px)": function () {
+            "(min-width: 900px)": function () {
                 // Horizontal scroll timeline
                 let tl = gsap.timeline({
                     scrollTrigger: {
@@ -759,12 +759,9 @@
                         pin: true,
                     }
                 });
-
                 tl.to(".left-side", { x: "-100vw", ease: "power1.inOut" }, 0);
                 tl.to(".right-side", { x: "100vw", ease: "power1.inOut" }, 0);
-
             },
-
             // Mobile / Tablet screens
             "(max-width: 768px)": function () {
                 // Vertical scroll for Hero section only
@@ -777,15 +774,27 @@
                         pin: true,
                     }
                 });
-
                 // Left-side goes up and hides
                 tl.to(".left-side", { y: -window.innerHeight, opacity: 0, ease: "power1.out" }, 0);
-
                 // Right-side goes down and hides
                 tl.to(".right-side", { y: window.innerHeight, opacity: 0, ease: "power1.out" }, 0);
             },
+        });
 
+        const scrollToTopBtn = document.querySelector('menu-item-1')
 
+        scrollToTopBtn.addEventListener("click", () => {
+            // Use GSAP to scroll the page smoothly to the top
+            gsap.to(window, {
+                scrollTo: 0,   // Scroll to top
+                duration: 1,    // Duration of the scroll
+                ease: "power1.inOut", // Smooth scroll easing
+                onComplete: () => {
+                    // Trigger the animations again after scroll-to-top
+                    gsap.to(".left-side", { x: "0vw", ease: "power1.inOut" });
+                    gsap.to(".right-side", { x: "0vw", ease: "power1.inOut" });
+                }
+            });
         });
 
     </script>
