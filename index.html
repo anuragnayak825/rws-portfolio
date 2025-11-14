@@ -25,7 +25,7 @@
             <div class="menu-line menu-line2"></div>
         </div>
         <div class="logo-postion">
-            <img src="image/rws-logo.png" alt="" width="140px">
+            <img src="image/rws-logo.png" alt="rws-logo" width="140px">
         </div>
         <div class="ul">
             <div onclick="window.location.href='https://www.facebook.com/raisingwebsolutions'" class="cion1"><i
@@ -47,15 +47,27 @@
             </div>
             <div onclick="window.location.href='#About'" class="menu-item-2 menu-item">
                 <p style="cursor: pointer;"> About</p>
+                <div class="icon-div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </div>
             <div onclick="window.location.href='#Portfolio'" class="menu-item-3 menu-item">
                 <p style="cursor: pointer;">Portfolio</p>
+                <div class="icon-div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </div>
             <div onclick="window.location.href='#Faq'" class="menu-item-4 menu-item">
                 <p style="cursor: pointer;">FAQ</p>
+                <div class="icon-div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </div>
             <div onclick="window.location.href='#Contact'" class="menu-item-5 menu-item">
                 <p style="cursor: pointer;">Contact</p>
+                <div class="icon-div">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </div>
         </div>
     </div>
@@ -71,7 +83,7 @@
             <!-- Left Side -->
             <div class="left-side">
                 <div class="contain-div">
-                    <img src="/image/rws-logo.webp" alt="" class="sticky-logo">
+                    <img src="/image/rws-logo.webp" alt="rws-logo" class="sticky-logo">
                     <h2>
                         <div id="lottie-container" style="width: 50px; height: 50px;"></div>
                         We are
@@ -85,7 +97,8 @@
                     <div onclick="window.location.href='#Portfolio'" class="btn">
                         <span> Our Portfolio</span>
                         <div class="">
-                            <img src="image/right-arrow_724964.svg" style="width: 30px; height: 30px; " alt="">
+                            <img src="image/right-arrow_724964.svg" style="width: 30px; height: 30px; "
+                                alt="right-arrow-icon">
                         </div>
                     </div>
 
@@ -129,7 +142,7 @@
         <div class="about-container">
             <!-- Left Image Section -->
             <div class="left-image">
-                <img src="image/8090.webp" alt="">
+                <img src="image/8090.webp" alt="about-img">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M40 40V0C40 22.0914 22.0914 40 0 40H40Z" fill="#fcfcfc"></path>
                 </svg>
@@ -167,7 +180,8 @@
                         through innovative strategies and solutions.
                     </div>
                 </div>
-                <img src="image/person-front-computer-working-html (1)_11zon.webp" alt="" class="bottom-div">
+                <img src="image/person-front-computer-working-html (1)_11zon.webp" alt="person-computer"
+                    class="bottom-div">
             </div>
         </div>
     </section>
@@ -186,23 +200,27 @@
         <h1>Showcasing Our Most Impactful Work</h1>
 
         <!-- 🔹 Filter Buttons -->
-        <div class="portfolio-filter">
+        <div class="portfolio-filter" style="display: none;">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="Website-Development">Website Development</button>
             <button class="filter-btn" data-filter="Digital-Marketing">Digital Marketing</button>
-            <button class="filter-btn" data-filter="Graphic-Design">Graphic Design</button>
+            <!-- <button class="filter-btn" data-filter="Graphic-Design">Graphic Design</button> -->
             <button class="filter-btn" data-filter="SEO">SEO</button>
             <button class="filter-btn" data-filter="SMO">SMO</button>
             <button class="filter-btn" data-filter="Paid-Advertising">Paid Advertising</button>
         </div>
-
         <!-- 🔹 Portfolio Items -->
         <div class="portfolio-wrapper">
-            <div class="portfolio-card" data-category="aircon">
-                <img src="/ima/transplantliverindia.webp" alt="">
+            <div class="portfolio-card" data-category="Website-Development">
+                <img src="/ima/transplantliverindia.webp" alt="transplantliverindia">
                 <div class="overlay-port">
                     <h2>Website Name</h2>
-                    <button class="view-link">
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://transplantliverindia.com/')" class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
                         <!-- </a> -->
@@ -211,10 +229,15 @@
             </div>
 
             <div class="portfolio-card" data-category="realestate">
-                <img src="/ima/asdesignstudio.webp" alt="">
+                <img src="/ima/asdesignstudio.webp" alt="asdesignstudio">
                 <div class="overlay-port">
-                    <h2>Website Name</h2>
-                    <button class="view-link">
+                    <h2>Asdesignstudio</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open(`https://www.asdesignstudio.co.in/`)" class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
                         <!-- </a> -->
@@ -223,9 +246,14 @@
             </div>
 
             <div class="portfolio-card" data-category="web">
-                <img src="/ima/airprocoolingsolution.webp" alt="">
+                <img src="/ima/airprocoolingsolution.webp" alt="airprocoolingsolution">
                 <div class="overlay-port">
-                    <h2>Website Name</h2>
+                    <h2>Airprocoolingsolution</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
                     <button class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
@@ -235,10 +263,15 @@
             </div>
 
             <div class="portfolio-card" data-category="marketing">
-                <img src="/ima/bluestreampools.webp" alt="">
+                <img src="/ima/bluestreampools.webp" alt="bluestreampools">
                 <div class="overlay-port">
-                    <h2>Website Name</h2>
-                    <button class="view-link">
+                    <h2>Bluestreampools</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://www.bluestreampools.com/')" class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
                         <!-- </a> -->
@@ -247,10 +280,15 @@
             </div>
 
             <div class="portfolio-card" data-category="branding">
-                <img src="/ima/eldowood.webp" alt="">
+                <img src="/ima/eldowood.webp" alt="eldowood">
                 <div class="overlay-port">
-                    <h2>Website Name</h2>
-                    <button class="view-link">
+                    <h2>Eldowood</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://www.eldowood.com/')" class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
                         <!-- </a> -->
@@ -258,23 +296,18 @@
                 </div>
             </div>
 
-            <div class="portfolio-card" data-category="marketing">
-                <img src="/ima/supertaskerservice.webp" alt="">
-                <div class="overlay-port">
-                    <h2>Website Name</h2>
-                    <button class="view-link">
-                        <!-- <a href=""> -->
-                        <i class="fas fa-link"></i> Visit Site
-                        <!-- </a> -->
-                    </button>
-                </div>
-            </div>
+
 
             <div class="portfolio-card" data-category="realestate">
-                <img src="/ima/tajcalling.webp" alt="">
+                <img src="/ima/tajcalling.webp" alt="tajcalling">
                 <div class="overlay-port">
-                    <h2>Website Name</h2>
-                    <button class="view-link">
+                    <h2>Tajcalling</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://www.tajcalling.com/')" class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
                         <!-- </a> -->
@@ -283,10 +316,15 @@
             </div>
 
             <div class="portfolio-card" data-category="web">
-                <img src="/ima/tajprivatetours.webp" alt="">
+                <img src="/ima/tajprivatetours.webp" alt="tajprivatetours">
                 <div class="overlay-port">
-                    <h2>Website Name</h2>
-                    <button class="view-link">
+                    <h2>Tajprivatetours</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://www.tajprivatetours.com/')" class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
                         <!-- </a> -->
@@ -295,10 +333,15 @@
             </div>
 
             <div class="portfolio-card" data-category="marketing">
-                <img src="/ima/tanresources.webp" alt="">
+                <img src="/ima/tanresources.webp" alt="tanresources">
                 <div class="overlay-port">
-                    <h2>Website Name</h2>
-                    <button class="view-link">
+                    <h2>Tanresources</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://tanresources.com/')" class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
                         <!-- </a> -->
@@ -306,14 +349,69 @@
                 </div>
             </div>
             <div class="portfolio-card" data-category="marketing">
-                <img src="/ima/thehairperfect.webp" alt="">
+                <img src="/ima/thehairperfect.webp" alt="thehairperfect">
                 <div class="overlay-port">
-                    <h2>Website Name</h2>
-                    <button class="view-link">
+                    <h2>Thehairperfect</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://www.thehairperfect.com/')" class="view-link">
                         <!-- <a href=""> -->
                         <i class="fas fa-link"></i> Visit Site
                         <!-- </a> -->
                     </button>
+                </div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <img src="/ima/seodigitalweb.webp" alt="thehairperfect">
+                <div class="overlay-port">
+                    <h2>Seodigitalweb</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://www.seodigitalweb.com/')" class="view-link">
+                        <!-- <a href=""> -->
+                        <i class="fas fa-link"></i> Visit Site
+                        <!-- </a> -->
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <img src="/ima/phalifestream.webp" alt="thehairperfect">
+                <div class="overlay-port">
+                    <h2>Phalifestream</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://phalifestream.com/')" class="view-link">
+                        <!-- <a href=""> -->
+                        <i class="fas fa-link"></i> Visit Site
+                        <!-- </a> -->
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-card" data-category="marketing">
+                <img src="/ima/accoolncool.webp" alt="thehairperfect">
+                <div class="overlay-port">
+                    <h2>Accoolncool</h2>
+                    <div class="we-workslist">
+                        <p>SEO</p>
+                        <P>SMO</P>
+                        <P>PPC</P>
+                    </div>
+                    <button onclick="window.open('https://www.accoolncool.com/')" class="view-link">
+                        <!-- <a href=""> -->
+                        <i class="fas fa-link"></i> Visit Site
+                        <!-- </a> -->
+                    </button>
+
+
                 </div>
             </div>
 
@@ -335,7 +433,7 @@
                     <path d="M40 40V0C40 22.0914 22.0914 40 0 40H40Z" fill="#fcfcfc"></path>
                 </svg>
                 <div class="top-left-corner"></div>
-                <img src="/image/9429.webp" alt="">
+                <img src="/image/9429.webp" alt="9429">
             </div>
         </div>
         <div class="faq-right-box faq-box">
@@ -437,16 +535,16 @@
             <div class="slider-track" id="sliderTrack">
                 <div class="card">
                     <div class="name">
-                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="" width="50px"
+                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="quotation-mark" width="50px"
                             height="50px">
                         <div class="name-div">
                             <h4 style=" margin-bottom: 3px;"> DHIRAJ JHA</h4>
                             <div class="star">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
                             </div>
                         </div>
                     </div>
@@ -459,16 +557,16 @@
                 </div>
                 <div class="card">
                     <div class="name">
-                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="" width="50px"
+                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="quotation-mark" width="50px"
                             height="50px">
                         <div class="name-div">
                             <h4 style=" margin-bottom: 3px;"> Thehealthy Treatments</h4>
                             <div class="star">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
                             </div>
                         </div>
                     </div>
@@ -481,16 +579,16 @@
                 </div>
                 <div class="card">
                     <div class="name">
-                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="" width="50px"
+                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="quotation-mark" width="50px"
                             height="50px">
                         <div class="name-div">
                             <h4 style=" margin-bottom: 3px;"> ADV. MANISH KUMAR</h4>
                             <div class="star">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
                             </div>
                         </div>
                     </div>
@@ -503,17 +601,17 @@
                 </div>
                 <div class="card">
                     <div class="name">
-                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="" width="50px"
+                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="quotation-mark" width="50px"
                             height="50px">
                         <div class="name-div">
                             <h4 style=" margin-bottom: 3px;">
                                 Raju Dangal</h4>
                             <div class="star">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
                             </div>
                         </div>
                     </div>
@@ -526,16 +624,16 @@
                 </div>
                 <div class="card">
                     <div class="name">
-                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="" width="50px"
+                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="quotation-mark" width="50px"
                             height="50px">
                         <div class="name-div">
                             <h4 style=" margin-bottom: 3px;"> Akash Sinha</h4>
                             <div class="star">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
                             </div>
                         </div>
                     </div>
@@ -552,16 +650,16 @@
             <div class="slider-track-2" id="sliderTrack-2">
                 <div class="card">
                     <div class="name">
-                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="" width="50px"
+                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="quotation-mark" width="50px"
                             height="50px">
                         <div class="name-div">
                             <h4 style=" margin-bottom: 3px;"> Gaurav</h4>
                             <div class="star">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
                             </div>
                         </div>
                     </div>
@@ -572,17 +670,17 @@
                 </div>
                 <div class="card">
                     <div class="name">
-                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="" width="50px"
+                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="quotation-mark" width="50px"
                             height="50px">
                         <div class="name-div">
                             <h4 style=" margin-bottom: 3px;">
                                 ASHISH VOHRA</h4>
                             <div class="star">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
                             </div>
                         </div>
                     </div>
@@ -594,17 +692,17 @@
                 </div>
                 <div class="card">
                     <div class="name">
-                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="" width="50px"
+                        <img class="name-image" src="/image/quotation-marks_63204.svg" alt="quotation-mark" width="50px"
                             height="50px">
                         <div class="name-div">
                             <h4 style="n-bottom: 3px;">
                                 Reyansh Agarwal</h4>
                             <div class="star">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
-                                <img class="star-img" src="/image/star_2107957.svg" alt="">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
+                                <img class="star-img" src="/image/star_2107957.svg" alt="star_2107957">
                             </div>
                         </div>
                     </div>
@@ -620,7 +718,7 @@
     </section>
 
 
-    <section class="body">
+    <section id="Contact" class="body">
         <div class="polygon-container" id="polygon">
             <!-- 16 Cards -->
             <div class="cards"><img src="https://picsum.photos/200?random=1"></div>
@@ -673,7 +771,7 @@
                     </div>
                 </div>
             </div>
-            <form id="Contact" action="">
+            <form action="">
                 <h1 class=""
                     style="color: white; font-family: Georgia, 'Times New Roman', Times, serif; letter-spacing: 1px ; text-transform:capitalize;">
                     Contact Us</h1>
@@ -708,7 +806,7 @@
 
     <footer>
         <div class="footer">
-            <img src="./image/rws-logo.webp" alt="" width="150px" style="position: relative; z-index: 3;">
+            <img src="./image/rws-logo.webp" alt="rws-logo" width="150px" style="position: relative; z-index: 3;">
             <p>Accelerate your business growth with our multi award-winning, full-service digital marketing agency
                 offering
                 a broad spectrum of bespoke digital solutions. Find out how we can make your marketing work harder for
@@ -720,6 +818,16 @@
             </div>
         </div>
     </footer>
+
+    <!--====== Sticky_btn ======-->
+
+    <div class="whatshapp-btn-div">
+        <a href="https://wa.me/919560034244">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+
 
 
 
@@ -781,21 +889,7 @@
             },
         });
 
-        const scrollToTopBtn = document.querySelector('menu-item-1')
 
-        scrollToTopBtn.addEventListener("click", () => {
-            // Use GSAP to scroll the page smoothly to the top
-            gsap.to(window, {
-                scrollTo: 0,   // Scroll to top
-                duration: 1,    // Duration of the scroll
-                ease: "power1.inOut", // Smooth scroll easing
-                onComplete: () => {
-                    // Trigger the animations again after scroll-to-top
-                    gsap.to(".left-side", { x: "0vw", ease: "power1.inOut" });
-                    gsap.to(".right-side", { x: "0vw", ease: "power1.inOut" });
-                }
-            });
-        });
 
     </script>
 

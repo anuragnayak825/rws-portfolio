@@ -212,6 +212,9 @@
         /* justify-content: flex-start; */
         /* aligns menu-list to the left */
     }
+    .side-menu-bar .menu-item .icon-div{
+        display: none;
+    }
 
 
     .side-menu-bar.open {
