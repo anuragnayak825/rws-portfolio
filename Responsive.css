@@ -91,6 +91,19 @@
 
     }
 
+    /* service */
+    .service-section {
+        padding: 40px 30px;
+    }
+
+    .service-container {
+        gap: 25px;
+    }
+
+    .service-card .featurs ul {
+        letter-spacing: 0px;
+        /* font-size: px; */
+    }
 
 
     /* PORTFOLIO */
@@ -108,16 +121,18 @@
 
     .faq-header h4 {
         font-size: 16px;
-        font-family: "Antonio", sans-serif;
     }
+
     /* FAQ */
     /* TESTimoials */
     #Testimonials h1 {
         font-size: 30px;
     }
+
     .body {
         height: 180vh;
     }
+
     .contact-us {
         width: 100%;
         height: 80vh;
@@ -212,7 +227,8 @@
         /* justify-content: flex-start; */
         /* aligns menu-list to the left */
     }
-    .side-menu-bar .menu-item .icon-div{
+
+    .side-menu-bar .menu-item .icon-div {
         display: none;
     }
 
@@ -431,7 +447,36 @@
 
 
 
-    /*  */
+    /*  service */
+
+    .service-container {
+        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-card .contain-div .img-div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .service-card .contain-div .content-div h1 {
+        font-size: 30px;
+    }
+
+    .service-card .contain-div .content-div p {
+        font-size: 20px;
+    }
+
+    .service-card .featurs ul {
+        font-size: 18px;
+    }
+
+    .service-card button {
+        font-size: 18px;
+    }
+
+    /* Testimonials */
 
 
     #Testimonials {
@@ -911,4 +956,39 @@
         letter-spacing: 1px;
         list-style: none;
     }
+
+    .service-section {
+        padding: 40px 10px;
+
+    }
+
+    .service-section p {
+        text-align: justify;
+    }
+
+    .service-card .contain-div {
+        gap: 15px;
+    }
+
+    .service-card .contain-div .content-div h1 {
+        font-size: 24px;
+    }
+
+    .service-card .contain-div .content-div p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    /* .service-card .featurs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } */
+
+    .service-card .featurs ul {
+        font-size: 14px;
+        padding: 0px 0px;
+        padding-left: 20px;
+    }
+
+
 }

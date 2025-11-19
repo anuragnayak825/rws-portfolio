@@ -408,11 +408,176 @@ a {
 }
 
 /* Next Sections */
+#service {
+    padding: 80px 80px 80px 160px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-family: "Inter", sans-serif;
+}
+
+.service-section {
+    width: 100%;
+    background-color: #fcfcfc;
+    padding: 0px 80px;
+    overflow-x: hidden;
+}
+
+.service-section h1 {
+    font-size: 40px;
+    line-height: 38px;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-section p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.6;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.service-card {
+    width: 100%;
+    border: 1px solid #f0f0f1;
+    background: linear-gradient(45deg, #F9FAFB, #FDFDFE);
+    text-align: left;
+    margin: 0px;
+    cursor: pointer;
+    transition: all .8s ease-in-out;
+    border-radius: 15px;
+    /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); */
+    padding: 30px 20px;
+    transition: all .5s ease-in-out;
+}
+
+.service-card:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+
+}
+
+.service-card:hover .img-div {
+    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); */
+
+    transform: scale(1.05) rotateZ(10deg);
+
+}
+
+.service-card:hover button {
+    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); */
+    gap: 20px;
+
+}
+
+.service-card .contain-div {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+}
+
+.service-card .contain-div .img-div {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #f0f0f1;
+    border-radius: 8px;
+    /* background-color: #071428; */
+    background: linear-gradient(150deg, #427afc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .9s ease-in-out;
+}
+
+.service-card .contain-div .content-div {
+    width: 80%;
+    text-align: left;
+    /* border: 1px solid; */
+
+}
+
+.service-card .contain-div .content-div h1 {
+    font-size: 26px;
+    text-align: left;
+    margin-bottom: 0px;
+
+}
+
+.service-card .contain-div .content-div p {
+    font-size: 17px;
+    text-align: left;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.service-card .featurs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-card .featurs ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.6;
+    /* letter-spacing: 1px; */
+    font-weight: 400;
+    padding: 0px 24px;
+    margin-bottom: 30px;
+    /* border: 1px solid; */
+
+}
+
+.service-card .featurs ul li {
+    list-style: disc;
+}
+
+.service-card .featurs ul li::marker {
+    color: #098DB4;
+    /* blue bullet */
+}
+
+.service-card button {
+    border: none;
+    outline: none;
+    display: flex;
+    justify-self: self-start;
+    align-items: center;
+    width: auto;
+    /* padding: 10px 20px; */
+    font-size: 16px;
+    gap: 10px;
+    /* letter-spacing: 1px; */
+    color: white;
+    background: linear-gradient(150deg, #2861EB, #8738EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: gap .5s ease-in-out;
+    cursor: pointer;
+}
 
 
 /* #Portfolio, */
 #About,
-#service,
 #Testimonials {
     width: 100%;
     height: auto;
@@ -697,7 +862,7 @@ h2 {
 }
 
 .portfolio-card .overlay-port h2 {
-    font-family: "Archivo", "Archivo Placeholder", sans-serif;
+   font-family: "Inter", sans-serif;
     font-size: 25px;
     font-weight: 500;
     color: white;
@@ -726,6 +891,7 @@ h2 {
     word-spacing: 1;
     cursor: pointer;
     transition: all .5s ease-in-out;
+     font-family: "Inter", sans-serif;
 }
 
 .portfolio-card .overlay-port .view-link:hover {
@@ -740,6 +906,7 @@ h2 {
     align-items: center;
     margin-top: 10px;
     gap: 10px;
+    row-gap: 0px;
 }
 
 .portfolio-card .overlay-port .we-workslist p {
@@ -748,6 +915,7 @@ h2 {
     color: white;
     font-weight: 500;
     font-size: 12px;
+     font-family: "Inter", sans-serif;
 }
 
 
@@ -1095,6 +1263,7 @@ h2 {
     backface-visibility: hidden;
     /* reduce edge flicker during rotation */
     transition: transform 0.1s linear;
+    box-shadow: 2px 2px 4px #747272a8;
 }
 
 .body .cards img {
